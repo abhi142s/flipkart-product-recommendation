@@ -1,2 +1,3 @@
 # Auto detect text files and perform LF normalization
+*.ipynb filter= lfs diff= text
 * text=auto
