@@ -17,6 +17,11 @@ model = ChatGroq(model = "llama-3.3-70b-versatile", temperature=0)
 chat_history = []
 store = {}
 
+def get_session_history(session_id: str) -> BaseChatMessageHistory:
+    if session_id not in store:
+        store[session_id] = ChatMessageHistory()
+    return store[session_id]
+
 vstore, random = data_ingestion("done")
 
 chain = generation(vstore)
