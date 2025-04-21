@@ -14,7 +14,7 @@ import os
 load_dotenv()
 
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
-model = ChatGroq(model = "llama-3.3-70b-versatile", temperature=0)
+model = ChatGroq(model = "llama-3.3-70b-versatile", temperature=0.5)
 
 chat_history = []
 store = {}
