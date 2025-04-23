@@ -10,16 +10,16 @@ It leverages:
 
 ---
 
-## 🔧 Features
-- 💬 Ask product comparison and feature questions like "Which Bluetooth earbuds are waterproof?"
-- 🧠 Personalized chat memory with session tracking
-- 🧾 Markdown/HTML response formatting support for clean bot answers
-- 🎨 Beautiful, mobile-responsive chatbot UI
-- 📁 Vector database with semantic search over product reviews
+## Features
+- Ask product comparison and feature questions like "Which Bluetooth earbuds are waterproof?"
+- Personalized chat memory with session tracking
+- Markdown/HTML response formatting support for clean bot answers
+- Beautiful, mobile-responsive chatbot UI
+- Vector database with semantic search over product reviews
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 flipkar-product-recommendation/
@@ -42,20 +42,20 @@ flipkar-product-recommendation/
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
-### 1. 🧪 Create Virtual Environment
+### 1. Create Virtual Environment
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 ```
 
-### 2. 📦 Install Requirements
+### 2. Install Requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. 🔑 Set Environment Variables
+### 3. Set Environment Variables
 Create a `.env` file with:
 ```
 ASTRA_DB_API_ENDPOINT=...
@@ -64,7 +64,7 @@ ASTRA_DB_KEYSPACE=...
 GROQ_API=...
 ```
 
-### 4. 📥 Load Data
+### 4. Load Data
 Run:
 ```bash
 python flipkart/data_ingestion.py
@@ -74,7 +74,7 @@ You’ll see something like:
 Inserted 1 documents.
 ```
 
-### 5. 🖥️ Start the Chatbot
+### 5. Start the Chatbot
 ```bash
 python app.py
 ```
@@ -82,7 +82,7 @@ Navigate to: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 - **LangChain** (retriever chains, prompt templates)
 - **AstraDB** + **Cassandra Vector Store** for embedding search
 - **Groq LLaMA-3 API** for conversational generation
@@ -90,21 +90,15 @@ Navigate to: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 - **Bootstrap** + **jQuery** for frontend UI
 
 ---
-
-## 🪄 Example Questions
-- "What's the best Bluetooth earphone under ₹2000?"
-- "Is the Realme Buds 2 waterproof?"
-- "Compare Realme Buds 2 and Boat Airdopes."
-
 ---
 
-## 📌 Notes
+## Notes
 - The chatbot supports **HTML-formatted responses** (including bold, lists, and line breaks).
 - You can customize the starting message and embed images/backgrounds in the `style.css`.
 
 ---
 
-## 📃 License
+## License
 MIT License
 
 ---
